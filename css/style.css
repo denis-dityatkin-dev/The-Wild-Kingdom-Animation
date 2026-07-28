@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("../css/anim.css");
 .wrapper {
   min-width: 320px;
   max-width: 1920px;
@@ -222,20 +223,22 @@ body {
   left: 0;
   width: 100%;
   z-index: 50;
+  transition: all 0.5s;
 }
 .header__container {
   display: grid;
   gap: 1.25rem;
   grid-template-columns: 1fr auto 1fr;
-  min-height: 9.5rem;
+  min-height: 7.5rem;
   align-items: center;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 @media (max-width: 61.9988rem) {
   .header__container {
     min-height: 6.25rem;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 }
 @media (max-width: 47.9988rem) {
@@ -1803,4 +1806,19 @@ body {
 
 .input._error {
   box-shadow: 0 0 15px rgb(226, 17, 17);
+}
+
+@media (max-width: 767px) {
+  .anim--down,
+.anim--zoom,
+.anim--up,
+.anim--down._active,
+.anim--zoom._active,
+.anim--up._active {
+    opacity: 1 !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+            animation: none !important;
+    transition: none !important;
+  }
 }

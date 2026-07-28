@@ -13,8 +13,8 @@
 </head>
 <body>
 <div class="wrapper">
-  <header class="header">
-          <div class="header__container">
+  <header id="navbar" class="header">
+          <div class="header__container ">
 						<!-- burger menu -->
 						<div class="top-header__menu header__menu menu">
 							<nav class="menu__body">
@@ -34,9 +34,9 @@
 									
 								</ul>
 								<div class="action-header--hide">
-									<a href="#" class="action-header__link">Log in</a>
-									<a href="#" class="action-header__link">Register</a>
-									<button type="button" class="action-header__button button button--border">Contact</button>
+									<a data-goto=".footer" href="#" class="action-header__link">Log in</a>
+									<a data-goto=".footer" href="#" class="action-header__link">Register</a>
+									<button data-goto=".contacts" type="button" class="action-header__button button button--border">Contact</button>
 								</div>
 							</nav>
 						</div>
@@ -58,20 +58,20 @@
 							<path d="M213.702 46.8519H209.884L201.07 69.0597L191.031 46.8519H186.459V46.9925L187.354 48.9602L184.715 76.9777H185.516L188.014 50.5064L199.326 75.1505H199.515L209.696 49.4756L212.288 77.0245H216.577L213.702 46.8519Z" fill="#C1AB81" />
 						</svg>
 						<div class="header__action action-header">
-							<a href="#" class="action-header__link">Log in</a>
-							<a href="#" class="action-header__link">Register</a>
-							<button type="button" class="action-header__button button button--border"><span>Contact</span></button>
+							<a data-goto=".footer" href="#" class="action-header__link">Log in</a>
+							<a data-goto=".footer" href="#" class="action-header__link">Register</a>
+							<button data-goto=".contacts" type="button" class="action-header__button button button--border"><span>Contact</span></button>
 						</div>
 						<button type="button" class="icon-menu"><span></span></button>
         </div>
   </header>
 	<main class="main">
-		<section class="hero">
+		<section class="hero --anim">
 			<div class="hero__container">
 				<div class="hero__body">
 					<div class="hero__content">
-						<h1 class="hero__title">A better world for pets</h1>
-						<a href="#" class="hero__button button button--border"><span>Explore</span></a>
+						<h1 class="hero__title anim--right">A better world for pets</h1>
+						<a href="#" class="hero__button button button--border anim--up"><span>Explore</span></a>
 					</div>
 				</div>
 					<div class="hero__slider swiper-container swiper">
@@ -106,64 +106,64 @@
 							</div>
 						</div>
 					</div>
-				<div class="hero__controll">
+				<div class="hero__controll anim--left">
 					<button type="button" class="hero__arrow hero__arrow--left _icon-slider-arrow"></button>
 					<button type="button" class="hero__arrow hero__arrow--right _icon-slider-arrow"></button>
 				</div>
 			</div>
 			<img src="./images/hero-bg.jpg" alt="hero__bg" class="hero__bg">
 		</section>
-		<section class="about-us">
+		<section class="about-us --anim">
 			<div class="about-us__container">
 				<div class="about-us__body">
-					<div class="about-us__image">
+					<div class="about-us__image anim--right">
 						<img src="./images/about/about.jpg" alt="about">
 					</div>
 					<div class="about-us__content">
 						<div class="about-us__block-header block-header">
-							<div class="block-header__label">About us</div>
-							<h2 class="block-header__title">Treating pet like Royalty</h2>
-							<div class="block-header__text text">
+							<div class="block-header__label anim--delay-up">About us</div>
+							<h2 class="block-header__title anim--delay-up">Treating pet like Royalty</h2>
+							<div class="block-header__text text anim--delay-up">
 								<blockquote>“They’re not just pets, they’re family”</blockquote>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.</p>
 							</div>
-							<a href="#" class="block-header__button button"><span>Explore</span> </a>
+							<a href="#" class="block-header__button button anim--delay-up"><span>Explore</span> </a>
 						</div>
 					</div>
 				</div>
 				<div class="about-us__services services-about-us">
 					<div class="services-about-us__item">
 						<div class="services-about-us__icon">
-							<img src="./images/about/icons/about-1.svg" alt="about">
+							<img src="./images/about/icons/about-1.svg" class=" anim--delay-right" alt="about">
 						</div>
-						<div class="services-about-us__label">Pet food</div>
+						<div class="services-about-us__label anim--delay-left">Pet food</div>
 					</div>
 					<div class="services-about-us__item">
 						<div class="services-about-us__icon">
-							<img src="./images/about/icons/about-2.svg" alt="about">
+							<img src="./images/about/icons/about-2.svg" class=" anim--delay-right" alt="about">
 						</div>
-						<div class="services-about-us__label">Pet care</div>
+						<div class="services-about-us__label anim--delay-left">Pet care</div>
 					</div>
 					<div class="services-about-us__item">
 						<div class="services-about-us__icon">
-							<img src="./images/about/icons/about-3.svg" alt="about">
+							<img src="./images/about/icons/about-3.svg" class=" anim--delay-right" alt="about">
 						</div>
-						<div class="services-about-us__label">Pet accessories</div>
+						<div class="services-about-us__label anim--delay-left">Pet accessories</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="products">
+		<section class="products --anim">
 			<div class="products__container">
 				<div class="products-block-header block-header block-header--center">
-					<div class="block-header__label">Our Products</div>
-					<h2 class="block-header__title">For all your pet needs</h2>
-					<div class="block-header__text text">
+					<div class="block-header__label anim--down">Our Products</div>
+					<h2 class="block-header__title anim--zoom">For all your pet needs</h2>
+					<div class="block-header__text text anim--up">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit.</p>
 					</div>
 				</div>
 				<div class="products__items">
-					<article class="products__item item-product">
+					<article class="products__item item-product anim--up">
 						<div class="item-product__header">
 							<div class="item-product__image-ibg-contain">
 								<img src="./images/products/products-1.png" alt="products">
@@ -184,7 +184,7 @@
 							</ul>
 						</div>
 					</article>
-					<article class="products__item item-product">
+					<article class="products__item item-product anim--up">
 						<div class="item-product__header">
 							<div class="item-product__image-ibg-contain">
 								<img src="./images/products/products-2.png" alt="products">
@@ -205,7 +205,7 @@
 							</ul>
 						</div>
 					</article>
-					<article class="products__item item-product">
+					<article class="products__item item-product anim--up">
 						<div class="item-product__header">
 							<div class="item-product__image-ibg-contain">
 								<img src="./images/products/products-1.png" alt="products">
@@ -226,7 +226,7 @@
 							</ul>
 						</div>
 					</article>
-					<article class="products__item item-product">
+					<article class="products__item item-product anim--up">
 						<div class="item-product__header">
 							<div class="item-product__image-ibg-contain">
 								<img src="./images/products/products-2.png" alt="products">
@@ -247,7 +247,7 @@
 							</ul>
 						</div>
 					</article>
-					<article class="products__item item-product">
+					<article class="products__item item-product anim--up">
 						<div class="item-product__header">
 							<div class="item-product__image-ibg-contain">
 								<img src="./images/products/products-1.png" alt="products">
@@ -268,7 +268,7 @@
 							</ul>
 						</div>
 					</article>
-					<article class="products__item item-product">
+					<article class="products__item item-product anim--up">
 						<div class="item-product__header">
 							<div class="item-product__image-ibg-contain">
 								<img src="./images/products/products-2.png" alt="products">
@@ -290,29 +290,29 @@
 						</div>
 					</article>
 				</div>
-				<a href="#" class="products__button button"><span>Explore</span> </a>
+				<a href="#" class="products__button button anim--zoom"><span>Explore</span> </a>
 			</div>
 		</section>
-		<section class="services">
+		<section class="services --anim">
 			<div class="services__container">
-				<div class="services__image">
+				<div class="services__image anim--right">
 					<img src="./images/services/services.jpg" alt="services">
 				</div>
 				<div class="services__block-header block-header block-header--white">
-					<div class="block-header__label">our services</div>
-					<h2 class="block-header__title">Quality Things for Loving Pets</h2>
-					<div class="block-header__text text">
+					<div class="block-header__label anim--delay">our services</div>
+					<h2 class="block-header__title anim--delay">Quality Things for Loving Pets</h2>
+					<div class="block-header__text text anim--delay">
 						<blockquote>“More than a Pet Store…”</blockquote>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.</p>
 					</div>
-					<a href="#" class="block-header__button button button--border"><span>Explore</span> </a>
+					<a href="#" class="block-header__button button button--border anim--delay"><span>Explore</span> </a>
 				</div>
 			</div>
 		</section>
-		<section class="gallery">
+		<section class="gallery --anim">
 			<div class="gallery__container row">
 				<div class="gallery__item column">
-					<div class="gallery__link">
+					<div class="gallery__link"> 
 						<img src="./images/gallery/gallery-1.jpg" onclick="openModal();currentSlide(1)" class="gallery__image hover-shadow" alt="gallery">
 						<a href="#" class="gallery__link--title _icon-slider-arrow"><span>Taking dogs care to the next level</span></a>
 					</div>
@@ -391,40 +391,40 @@
 				</div>
 			</div>
 		</section>
-		<section class="contacts">
+		<section class="contacts --anim">
 			<div class="contacts__container">
 				<div class="contacts__media media-contacts">
 					<div class="media-contacts__images">
 						<div class="media-contacts__block-image">
-							<img class="media-contacts__image" src="./images/contacts/contacts-1.jpg" alt="contacts">
+							<img class="media-contacts__image anim--down" src="./images/contacts/contacts-1.jpg" alt="contacts">
 							<a href="#" target="_blank" class="media-contacts__play _icon-play"><span></span></a>
 						</div>
-						<div class="media-contacts__block-image">
-							<img class="media-contacts__image" src="./images/contacts/contacts-2.jpg" alt="contacts">
+						<div class="media-contacts__block-image ">
+							<img class="media-contacts__image anim--up" src="./images/contacts/contacts-2.jpg" alt="contacts">
 						</div>
 						
 					</div>
 					
 				</div>
 				<div class="contacts__block-header block-header">
-					<div class="block-header__label">Contact us</div>
-					<h2 class="block-header__title">Come for the care, leave with a smile</h2>
+					<div class="block-header__label anim--delay-down">Contact us</div>
+					<h2 class="block-header__title anim--delay-down">Come for the care, leave with a smile</h2>
 					<address class="block-header__contacts contacts-items">
-						<ul class="contacts-items__item _icon-clock">
+						<ul class="contacts-items__item _icon-clock anim--delay-left">
 							<li>Monday/Friday 9:00-23:00</li>
 							<li>Saturday 10:00-21:00</li>
 						</ul>
-						<ul class="contacts-items__item _icon-location">
+						<ul class="contacts-items__item _icon-location anim--delay-left">
 							<li><a href="tel:+0123456789">+012345-67-89</a></li>
 							<li><a href="mailto:TheWildKingdom@contact.com">TheWildKingdom@contact.com</a></li>
 							<li>9889 Lorem Ipsum street, Pellentesque, CA, USA</li>
 						</ul>
 					</address>
-					<a href="#" class="block-header__button button"><span>Contact</span> </a>
+					<a href="#" class="block-header__button button anim--zoom"><span>Contact</span> </a>
 				</div>
 			</div>
 		</section>
-		<section class="reviews">
+		<section class="reviews --anim">
 			<div class="reviews__container">
 								<!-- Slider main container-->
 				<div class="reviews__slider swiper-container swiper">
@@ -478,37 +478,37 @@
 			</div>
 		</section>
 	</main>
-	<footer class="footer">
+	<footer class="footer --anim">
 		<div class="footer__container">
 			<div class="footer__body">
 					<div  class="footer__content">
 						<div data-spollers="768" data-one-spoller class="footer__menu menu-footer spollers">
 							<div  class="menu-footer__block spollers__item">
-								<button type="button" data-spoller class="menu-footer__title">Sitemap</button>
+								<button type="button" data-spoller class="menu-footer__title anim--right">Sitemap</button>
 								<ul class="menu-footer__list">
-									<li class="menu-footer__item">
-										<a data-goto=".home" href="#" class="menu-footer__link">Home</a>
+									<li class="menu-footer__item anim--delay-up">
+										<a data-goto=".wrapper" href="#" class="menu-footer__link">Home</a>
 									</li>
-									<li class="menu-footer__item">
-										<a data-goto=".about" href="#" class="menu-footer__link">About</a>
+									<li class="menu-footer__item anim--delay-up">
+										<a data-goto=".about-us" href="#" class="menu-footer__link">About</a>
 									</li>
-									<li class="menu-footer__item">
+									<li class="menu-footer__item anim--delay-up">
 										<a data-goto=".products" href="#" class="menu-footer__link">Products</a>
 									</li>
-									<li class="menu-footer__item">
+									<li class="menu-footer__item anim--delay-up">
 										<a data-goto=".services" href="#" class="menu-footer__link">Services</a>
 									</li>
 								</ul>
 							</div>
 						</div>
 						<div class="footer__social social">
-							<a target="_blank" href="#" class="social__item _icon-s-1"></a>
-							<a target="_blank" href="#" class="social__item _icon-s-2"></a>
-							<a target="_blank" href="#" class="social__item _icon-s-3"></a>
-							<a target="_blank" href="#" class="social__item _icon-s-6"></a>
+							<a target="_blank" href="#" class="social__item _icon-s-1 anim--delay"></a>
+							<a target="_blank" href="#" class="social__item _icon-s-2 anim--delay"></a>
+							<a target="_blank" href="#" class="social__item _icon-s-3 anim--delay"></a>
+							<a target="_blank" href="#" class="social__item _icon-s-6 anim--delay"></a>
 						</div>
 					</div>
-					<svg class="footer__logo" viewBox="0 0 217 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<svg class="footer__logo anim--zoom" viewBox="0 0 217 78" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M22.0115 0H0.37707L0 4.07611H0.0471338C3.39363 2.48315 5.56179 0.749629 8.05988 0.749629H9.04969V30.1726H13.3389V0.749629H14.2815C16.7796 0.749629 19.0421 2.53 22.3886 4.12297H22.4828L22.0115 0Z" fill="#C1AB81" />
 						<path d="M48.6226 0V14.1024H33.7754V0H29.5334V30.1726H33.7754V14.8521H48.6226V30.1726H52.8646V0H48.6226Z" fill="#C1AB81" />
 						<path d="M68.9704 29.423H66.5666V14.8521H74.485V14.1024H66.5666V0.749629H68.9704C72.5526 0.749629 76.7946 1.03074 78.3971 5.29426H79.2927L79.2456 0H62.3245V30.1726H79.2456L79.2927 24.8784H78.3971C76.7946 29.1419 72.5526 29.423 68.9704 29.423Z" fill="#C1AB81" />
@@ -526,15 +526,15 @@
 					</svg>
 					<div class="footer__subscribe subscribe">
 						<div class="subscribe__body">
-							<h5 class="subscribe__title">Treating all the pets present here like royalty.</h5>
-							<form id="form" action="#" class="subscribe__form form__body form">
+							<h5 class="subscribe__title anim--left">Treating all the pets present here like royalty.</h5>
+							<form id="form" action="#" class="subscribe__form form__body form anim--up">
 									<input autocomplete="off" type="text" name="form[]" data-error="Error" data-required="email" placeholder="Enter email address" class="subscribe__input form__input input _req">
 									<button type="submit" class="subscribe__button form__button">Subscribe</button>
 							</form>
 						</div>
 					</div>
 			</div>
-			<div class="footer__copy">
+			<div class="footer__copy anim--up">
 				Copyright Dotcreativemarket
 			</div>
 			<a data-goto=".wrapper" href="#" class="up _icon-slider-arrow"></a>
@@ -547,45 +547,7 @@
 	<script src="js/forms.js"></script>
 	<script src="js/spoller.js"></script>
 	<script src="js/gallery.js"></script>
+	<script src="js/anim.js"></script>
+	<script src="js/float-head.js"></script>
 </body>
 </html>
-<!-- 
-	<div class="block-header">
-		<div class="block-header__label">About us</div>
-		<h2 class="block-header__title">Treating pet like Royalty</h2>
-		<div class="block-header__text text">
-			<blockquote>“They’re not just pets, they’re family”</blockquote>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.</p>
-		</div>
-		<a href="#" class="block-header__button button"><span>Explore</span> </a>
-	</div>
- -->
- <!-- <div class="item-product__rating rating rating_set">
-								<div class="rating__body">
-									<div class="rating__active"></div>
-										<div class="rating__items">
-											<input type="radio" class="rating__item" name="rating" value="1">
-											<input type="radio" class="rating__item" name="rating" value="2">
-											<input type="radio" class="rating__item" name="rating" value="3">
-											<input type="radio" class="rating__item" name="rating" value="4">
-											<input type="radio" class="rating__item" name="rating" value="5">
-										</div>
-									</div>
-								<div class="rating__value">4</div>
-							</div>
-  -->
-		<!-- Images used to open the lightbox -->
-			<!-- <div class="row">
-				<div class="column">
-					<img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-				</div>
-				<div class="column">
-					<img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-				</div>
-				<div class="column">
-					<img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-				</div>
-				<div class="column">
-					<img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-				</div>
-			</div> -->

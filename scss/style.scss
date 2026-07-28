@@ -1,5 +1,6 @@
 ﻿// Подключение шрифтов только в самом верху
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("../css/anim.css");
 // max-width(1170px){}
 // max-width(991.98px){}
 // max-width(767.98px){}
@@ -241,22 +242,20 @@ body {
 	left: 0;
 	width: 100%;
 	z-index: 50;
-	// transition: background-color 0.8s;
-	// &._header-scroll{
-	// 	background-color: rgba(0, 0, 0, 0.6);
-	// }
+	transition: all 0.5s;
+
 	&__container {
 		display: grid;
 		gap: 1.25rem;
 		grid-template-columns: 1fr auto 1fr;
-		min-height: 9.5rem;
+		min-height: 7.5rem;
 		align-items: center;
 		padding-top: 0.625rem;
 		padding-bottom: 0.625rem;
-		// background-color: rgba(0, 0, 0, 0.1);
+		background-color: rgba(0, 0, 0, 0.6);
 		@media (max-width: 61.9988rem) {
 			min-height: 6.25rem;
-			background-color: rgba(0, 0, 0, 0.6);
+			background-color: rgba(0, 0, 0, 0.7);
 		}
 		@media (max-width: 47.9988rem) {
 			min-height: 4.375rem;
@@ -1771,3 +1770,17 @@ body {
 	box-shadow: 0 0 15px rgb(226, 17, 17);
 }
 // ====================================================
+
+@media (max-width: 767px) {
+  .anim--down,
+  .anim--zoom,
+  .anim--up,
+  .anim--down._active,
+  .anim--zoom._active,
+  .anim--up._active {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
