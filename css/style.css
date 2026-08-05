@@ -14,9 +14,9 @@
 }
 
 [class*=__container] {
-  max-width: 1600px;
+  max-width: 100rem;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 0.9375rem;
   box-sizing: border-box;
 }
 
@@ -1806,19 +1806,4 @@ body {
 
 .input._error {
   box-shadow: 0 0 15px rgb(226, 17, 17);
-}
-
-@media (max-width: 767px) {
-  .anim--down,
-.anim--zoom,
-.anim--up,
-.anim--down._active,
-.anim--zoom._active,
-.anim--up._active {
-    opacity: 1 !important;
-    transform: none !important;
-    -webkit-animation: none !important;
-            animation: none !important;
-    transition: none !important;
-  }
 }

@@ -22,9 +22,9 @@
 
 // ===============Ограничивающий контейнер через селктор класса============
 [class*="__container"] {
-	max-width: 1600px;
+	max-width: 100rem;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 0.9375rem;
 	box-sizing: border-box;
 }
 
@@ -827,10 +827,14 @@ body {
 
 	&__image-ibg-contain {
 		aspect-ratio: 353 / 351;
+	
 		img {
+			// width: 100%;
+			// height: 100%;
 			filter: drop-shadow(10px 10px 10px rgba(60, 38, 12, 0.35));
 		}
 	}
+	
 	&__add-to-cart {
 		position: absolute;
 		top: 50%;
@@ -1771,16 +1775,3 @@ body {
 }
 // ====================================================
 
-@media (max-width: 767px) {
-  .anim--down,
-  .anim--zoom,
-  .anim--up,
-  .anim--down._active,
-  .anim--zoom._active,
-  .anim--up._active {
-    opacity: 1 !important;
-    transform: none !important;
-    animation: none !important;
-    transition: none !important;
-  }
-}
